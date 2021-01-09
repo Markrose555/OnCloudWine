@@ -1,0 +1,16 @@
+﻿@model IEnumerable <OnCloudWine.Models.Order>
+
+
+
+<table>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @item.OrderId;
+                @item.Username;
+
+            </td>
+        </tr>
+    }
+</table>

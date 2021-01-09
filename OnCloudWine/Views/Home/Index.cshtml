@@ -1,0 +1,126 @@
+﻿@{ ViewBag.Title = "Home Page"; }
+
+<div class="jumbotron" style="background-image: url( @Url.Content("~/Images/wineblur.jpg") );">
+    
+    <div>
+        <h1 style="color: white; text-shadow: 2px 2px 10px #000000;">On Cloud Wine - Premium Wines</h1>
+        <p class="lead">Choose from an extensive selection of fine wines curated by our expert team.</p>
+        <p><button type="button" class="btn btn-primary btn-large" onclick="location.href='@Url.Action("Index", "Products")'">Order Now &raquo;</button></p>
+    </div>
+</div>
+<h2>Featured Wines</h2>
+<div class="row">
+    
+    <div class="col-md-2">
+        <div class="card" style="width: 18rem; min-height: 325px; box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.26); padding: 5px;">
+            <img class="card-img-top" style="display: block; margin-left: auto; margin-right: auto; height: 150px; width: auto;" src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTqBjb9ufzIBJROxGQjxmOMqVuSAPZmIeM322FXuNqFemdJhVyRZK3qcUr8j1s&usqp=CAE" alt="Card image cap">
+            <div class="card-body text-center">
+                <h5 class="card-title" style="text-align:center;">Apothic Red Blend</h5>
+                <hr />
+                <p class="card-text">Apothic Red offers a truly unique wine experience.</p>
+                <a href="@Url.Action("Details", "Products", new {id = "20"})" class="btn btn-primary">See Details</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        
+        <div class="card" style="width: 18rem; min-height: 325px; box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.26); padding: 5px;">
+            <img class="card-img-top" style="display: block; margin-left: auto; margin-right: auto; height: 150px; width: auto;" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQDarJ7zX84jsiiJov8x2nYtwWHWI6JphCp2SpXC57hkT7lWJYF&usqp=CAY" alt="Card image cap">
+            <div class="card-body text-center">
+                <h5 class="card-title" style="text-align:center;">Gerard Bertrand Cote</h5>
+                <hr />
+                <p class="card-text">This Wine embodies the South of France lifestyle.</p>
+                <a href="@Url.Action("Details", "Products", new {id = "11"})" class="btn btn-primary">See Details</a>
+            </div>
+        </div>
+        
+    </div>
+    <div class="col-md-2">
+        
+        <div class="card" style="box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.26); min-height: 300px; width: 18rem;  padding: 5px;">
+            <img class="card-img-top" style="display: block; margin-left: auto; margin-right: auto; height: 150px; width: auto;" src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTAYlJZSpZ2YxjuJinlbUFfiKXEr9mA9_R_ce_gSYgc8GHNs-L3B6X4DXPo&usqp=CAE" alt="Card image cap">
+            <div class="card-body text-center">
+                <h5 class="card-title" style="text-align:center;">Oyster Bay Sauvignon</h5>
+                <hr />
+                <p class="card-text">Oyster Bay wines capture the special character of New Zealand.</p>
+                <a href="@Url.Action("Details", "Products", new {id = "15"})" class="btn btn-primary">See Details</a>
+            </div>
+        </div>
+        
+    </div>
+    <div class="col-md-2">
+        <div class="card" style="box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.26); min-height: 300px; width: 18rem;  padding: 5px;">
+            <img class="card-img-top" style="display: block; margin-left: auto; margin-right: auto; height: 150px; width: auto;" src="https://img.thewhiskyexchange.com/900/spark_bot2.jpg" alt="Card image cap">
+            <div class="card-body text-center">
+                <h5 class="card-title" style="text-align:center;">Bottega Rose Gold</h5>
+                <hr />
+                <p class="card-text">Bottega Rose Gold is made using Pinot Nero grapes from Lombardy.</p>
+                <a href="@Url.Action("Details", "Products", new {id = "13"})" class="btn btn-primary">See Details</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="card" style="box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.26); min-height: 300px; width: 18rem;  padding: 5px;">
+            <img class="card-img-top" style="display: block; margin-left: auto; margin-right: auto; height: 150px; width: auto;" src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS2NBOXv0f_1D1tENqzW29i80ltI1yBBh_Zvnbtkhtv44RcfZ44ipC2Vg7_E6OtltFu3Cnj_jYT&usqp=CAE" alt="Card image cap">
+            <div class="card-body text-center">
+                <h5 class="card-title" style="text-align:center;">Barefoot Pinot Grigio</h5>
+                <hr />
+                <p class="card-text">Barefoot Pinot Grigio is a refreshing wine with citrus and green apple.</p>
+                <a href="@Url.Action("Details", "Products", new {id = "14"})" class="btn btn-primary">See Details</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <div class="card" style="box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.26); min-height: 300px; width: 18rem;  padding: 5px;">
+            <img class="card-img-top" style="display: block; margin-left: auto; margin-right: auto; height: 150px; width: auto;" src="https://www.koniwines.com/wp-content/uploads/2020/08/KoniWines-rose-1.jpg" alt="Card image cap">
+            <div class="card-body text-center">
+                <h5 class="card-title" style="text-align:center;">Koni Natural Sweet Rosé</h5>
+                <hr />
+                <p class="card-text">
+                    An attractive soft pink with a bouquet of rose petal, strawberry and cloves.
+                </p>
+                <a href="@Url.Action("Details", "Products", new {id = "4"})" class="btn btn-primary">See Details</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+
+    </div>
+    <div class="col-md-4">
+
+    </div>
+
+
+
+</div>
+@*@{
+        ViewBag.Title = "Home Page";
+    }
+
+    <div class="jumbotron">
+        <h1>ASP.NET</h1>
+        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+        <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Getting started</h2>
+            <p>
+                ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+                enables a clean separation of concerns and gives you full control over markup
+                for enjoyable, agile development.
+            </p>
+            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Get more libraries</h2>
+            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Web Hosting</h2>
+            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        </div>
+    </div>*@
