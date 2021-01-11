@@ -34,22 +34,7 @@
         <strong>An item was added to your cart.</strong> To check out now simply <a href="@Url.Action("Index", "WineCart")" class="alert-link">click here</a>.
     </div>
 
-    <!--<div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 class="modal-title">Confirm check out.</h4>
-            </div>
-            <div class="modal-body">
-                <p>Would you like to check out or keep shopping??</p>
 
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Continue</button>
-                <button type="submit" class="btn btn-primary" onclick="location.href='@Url.Action("Index", "WineCart")'">Check Out</button>
-            </div>
-        </div>
-    </div>-->
 </div>
 
 
@@ -127,7 +112,7 @@
             </a>
             |
             @Html.ActionLink("Details", "Details", new { id = product.ID })
-        
+
         @if (Request.IsAuthenticated && User.IsInRole("Admin"))
         {
 
